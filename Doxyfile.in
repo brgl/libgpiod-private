@@ -46,7 +46,9 @@ WARN_FORMAT            =
 WARN_LOGFILE           =
 INPUT                  = @top_srcdir@/include/gpiod.h \
                          @top_srcdir@/bindings/cxx/gpiod.hpp \
-                         @top_srcdir@/bindings/cxx/gpiodcxx/
+                         @top_srcdir@/bindings/cxx/gpiodcxx/ \
+                         @top_srcdir@/bindings/glib/gpiod-glib.h \
+                         @top_srcdir@/bindings/glib/gpiod-glib/
 SOURCE_BROWSER         = YES
 INLINE_SOURCES         = NO
 REFERENCED_BY_RELATION = YES
