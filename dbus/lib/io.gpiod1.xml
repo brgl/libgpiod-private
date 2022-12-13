@@ -1,0 +1,53 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- SPDX-FileCopyrightText: 2022-2024 Bartosz Golaszewski <bartosz.golaszewski@linaro.org> -->
+
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+ "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+
+<node>
+  <interface name='io.gpiod1.Chip'>
+    <property name='Name' type='s' access='read'/>
+    <property name='Label' type='s' access='read'/>
+    <property name='NumLines' type='u' access='read'/>
+    <property name='Path' type='s' access='read'/>
+    <method name='RequestLines'>
+      <arg name='line_config' direction='in' type='(a(aua{sv})ai)'/>
+      <arg name='request_config' direction='in' type='a{sv}'/>
+      <arg name='request_path' direction='out' type='o'/>
+    </method>
+  </interface>
+  <interface name='io.gpiod1.Line'>
+    <property name='Offset' type='u' access='read'/>
+    <property name='Name' type='s' access='read'/>
+    <property name='Used' type='b' access='read'/>
+    <property name='Consumer' type='s' access='read'/>
+    <property name='Direction' type='s' access='read'/>
+    <property name='EdgeDetection' type='s' access='read'/>
+    <property name='Bias' type='s' access='read'/>
+    <property name='Drive' type='s' access='read'/>
+    <property name='ActiveLow' type='b' access='read'/>
+    <property name='Debounced' type='b' access='read'/>
+    <property name='DebouncePeriodUs' type='t' access='read'/>
+    <property name='EventClock' type='s' access='read'/>
+    <property name='Managed' type='b' access='read'/>
+    <property name='RequestPath' type='o' access='read'/>
+    <signal name='EdgeEvent'>
+      <arg name='event_data' type='(ittt)'/>
+    </signal>
+  </interface>
+  <interface name='io.gpiod1.Request'>
+    <property name='ChipPath' type='o' access='read'/>
+    <property name='LinePaths' type='ao' access='read'/>
+    <method name='Release'/>
+    <method name='ReconfigureLines'>
+      <arg name='line_config' direction='in' type='(a(aua{sv})ai)'/>
+    </method>
+    <method name='GetValues'>
+      <arg name='offsets' direction='in' type='au'/>
+      <arg name='values' direction='out' type='ai'/>
+    </method>
+    <method name='SetValues'>
+      <arg name='values' direction='in' type='a{ui}'/>
+    </method>
+  </interface>
+</node>
