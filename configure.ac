@@ -274,6 +274,7 @@ AC_CONFIG_FILES([Makefile
 		 tests/gpiosim/Makefile
 		 tests/gpiosim-glib/Makefile
 		 tests/harness/Makefile
+		 tests/bash/Makefile
 		 bindings/cxx/libgpiodcxx.pc
 		 bindings/Makefile
 		 bindings/cxx/Makefile
