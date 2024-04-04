@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: LGPL-2.1-or-later */
-/* SPDX-FileCopyrightText: 2022-2023 Bartosz Golaszewski <bartosz.golaszewski@linaro.org> */
+/* SPDX-FileCopyrightText: 2022-2024 Bartosz Golaszewski <bartosz.golaszewski@linaro.org> */
 
 /**
  * @file gpiod-glib.h
  */
 
-#ifndef __GPIOD_GLIB_H__
-#define __GPIOD_GLIB_H__
+#ifndef __GPIODGLIB_H__
+#define __GPIODGLIB_H__
 
 /**
  * @defgroup gpiodglib GLib bindings
@@ -15,7 +15,7 @@
  * GObject type system.
  */
 
-#define __GPIOD_GLIB_INSIDE__
+#define __GPIODGLIB_INSIDE__
 #include "gpiod-glib/chip.h"
 #include "gpiod-glib/chip-info.h"
 #include "gpiod-glib/edge-event.h"
@@ -28,6 +28,6 @@
 #include "gpiod-glib/line-settings.h"
 #include "gpiod-glib/misc.h"
 #include "gpiod-glib/request-config.h"
-#undef __GPIOD_GLIB_INSIDE__
+#undef __GPIODGLIB_INSIDE__
 
-#endif /* __GPIOD_GLIB_H__ */
+#endif /* __GPIODGLIB_H__ */
