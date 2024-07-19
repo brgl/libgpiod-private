@@ -4,7 +4,7 @@
 /* Minimal example of finding a line with the given name. */
 
 #include <glib.h>
-#include <gpiod-glib.h>
+#include <gpiodglib.h>
 #include <stdlib.h>
 
 int main(void)

@@ -4,7 +4,7 @@
 /* Minimal example of reading the info for a line. */
 
 #include <glib.h>
-#include <gpiod-glib.h>
+#include <gpiodglib.h>
 #include <stdlib.h>
 
 static GString *make_flags(GpiodglibLineInfo *info)

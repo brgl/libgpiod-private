@@ -4,7 +4,7 @@
 /* Minimal example of watching for requests on particular lines. */
 
 #include <glib.h>
-#include <gpiod-glib.h>
+#include <gpiodglib.h>
 #include <stdlib.h>
 
 static void on_info_event(GpiodglibChip *chip G_GNUC_UNUSED,

@@ -4,7 +4,7 @@
 /* Minimal example of reading the info for a chip. */
 
 #include <glib.h>
-#include <gpiod-glib.h>
+#include <gpiodglib.h>
 #include <stdlib.h>
 
 int main(void)

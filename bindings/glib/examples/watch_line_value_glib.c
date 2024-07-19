@@ -4,7 +4,7 @@
 /* Minimal example of asynchronously watching for edges on a single line. */
 
 #include <glib.h>
-#include <gpiod-glib.h>
+#include <gpiodglib.h>
 #include <stdlib.h>
 
 static void on_edge_event(GpiodglibLineRequest *request G_GNUC_UNUSED,

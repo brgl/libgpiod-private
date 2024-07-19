@@ -4,7 +4,7 @@
 /* Minimal example of periodically toggling a single line. */
 
 #include <glib.h>
-#include <gpiod-glib.h>
+#include <gpiodglib.h>
 #include <stdlib.h>
 
 typedef struct {
