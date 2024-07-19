@@ -77,28 +77,28 @@ pkgconfig_DATA = gpiod-glib.pc
 
 if HAVE_INTROSPECTION
 
-INTROSPECTION_GIRS = gpiod-glib.gir
+INTROSPECTION_GIRS = gpiod-glib-1.0.gir
 
 girdir = $(INTROSPECTION_GIRDIR)
-gir_DATA = gpiod-glib.gir
+gir_DATA = gpiod-glib-1.0.gir
 
 typelibsdir = $(INTROSPECTION_TYPELIBDIR)
-typelibs_DATA = gpiod-glib.typelib
+typelibs_DATA = gpiod-glib-1.0.typelib
 
-gpiod_gir_SCANNERFLAGS = \
+gpiod_glib_1_0_gir_SCANNERFLAGS = \
 	--c-include="gpiod-glib.h" \
 	--warn-all \
 	--namespace Gpiodglib \
 	--identifier-prefix Gpiodglib \
-	--symbol-prefix gpiod
+	--symbol-prefix gpiodglib
 
-gpiod_glib_gir_CFLAGS = $(libgpiod_glib_la_CFLAGS)
+gpiod_glib_1_0_gir_CFLAGS = $(libgpiod_glib_la_CFLAGS)
 
-gpiod-glib.gir: libgpiod-glib.la
-gpiod_glib_gir_INCLUDES = Gio-2.0
-gpiod_glib_gir_LIBS = libgpiod-glib.la
-gpiod_glib_gir_FILES = $(libgpiod_glib_la_SOURCES)
-gpiod_glib_gir_EXPORT_PACKAGES = gpiod-glib
+gpiod-glib-1.0.gir: libgpiod-glib.la
+gpiod_glib_1_0_gir_INCLUDES = Gio-2.0
+gpiod_glib_1_0_gir_LIBS = libgpiod-glib.la
+gpiod_glib_1_0_gir_FILES = $(libgpiod_glib_la_SOURCES)
+gpiod_glib_1_0_gir_EXPORT_PACKAGES = gpiod-glib
 
 include $(INTROSPECTION_MAKEFILE)
 
