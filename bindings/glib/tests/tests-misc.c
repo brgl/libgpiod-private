@@ -2,7 +2,7 @@
 // SPDX-FileCopyrightText: 2022-2024 Bartosz Golaszewski <bartosz.golaszewski@linaro.org>
 
 #include <glib.h>
-#include <gpiod-glib.h>
+#include <gpiodglib.h>
 #include <gpiod-test.h>
 #include <gpiod-test-common.h>
 #include <gpiosim-glib.h>

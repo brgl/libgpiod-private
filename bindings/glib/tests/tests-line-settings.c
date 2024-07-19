@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 // SPDX-FileCopyrightText: 2023-2024 Bartosz Golaszewski <bartosz.golaszewski@linaro.org>
 
-#include <gpiod-glib.h>
+#include <gpiodglib.h>
 #include <gpiod-test.h>
 
 #include "helpers.h"
