@@ -9,7 +9,7 @@
 #define __GPIODGLIB_LINE_H__
 
 #if !defined (__GPIODGLIB_INSIDE__)
-#error "Only <gpiod-glib.h> can be included directly."
+#error "Only <gpiodglib.h> can be included directly."
 #endif
 
 #include <glib.h>

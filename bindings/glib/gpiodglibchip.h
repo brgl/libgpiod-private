@@ -9,17 +9,17 @@
 #define __GPIODGLIB_CHIP_H__
 
 #if !defined (__GPIODGLIB_INSIDE__)
-#error "Only <gpiod-glib.h> can be included directly."
+#error "Only <gpiodglib.h> can be included directly."
 #endif
 
 #include <glib.h>
 #include <glib-object.h>
 
-#include "chip-info.h"
-#include "line-config.h"
-#include "line-info.h"
-#include "line-request.h"
-#include "request-config.h"
+#include "gpiodglibchipinfo.h"
+#include "gpiodgliblineconfig.h"
+#include "gpiodgliblineinfo.h"
+#include "gpiodgliblinerequest.h"
+#include "gpiodglibrequestconfig.h"
 
 G_BEGIN_DECLS
 

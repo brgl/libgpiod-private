@@ -8,7 +8,7 @@
 #include <glib-object.h>
 #include <gpiod.h>
 
-#include "gpiod-glib.h"
+#include "gpiodglib.h"
 
 GpiodglibLineSettings *
 _gpiodglib_line_settings_new(struct gpiod_line_settings *handle);
