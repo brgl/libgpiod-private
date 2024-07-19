@@ -3,7 +3,7 @@
 
 #include <gio/gio.h>
 
-#include "internal.h"
+#include "gpiodglibinternal.h"
 
 struct _GpiodglibChipInfo {
 	GObject parent_instance;

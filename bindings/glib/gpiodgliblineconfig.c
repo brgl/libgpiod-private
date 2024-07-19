@@ -3,7 +3,7 @@
 
 #include <gio/gio.h>
 
-#include "internal.h"
+#include "gpiodglibinternal.h"
 
 struct _GpiodglibLineConfig {
 	GObject parent_instance;

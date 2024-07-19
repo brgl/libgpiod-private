@@ -3,7 +3,7 @@
 
 #include <gio/gio.h>
 
-#include "internal.h"
+#include "gpiodglibinternal.h"
 
 static const gsize event_buf_size = 64;
 

@@ -4,7 +4,7 @@
 #include <gio/gio.h>
 #include <stdarg.h>
 
-#include "internal.h"
+#include "gpiodglibinternal.h"
 
 struct _GpiodglibLineSettings {
 	GObject parent_instance;

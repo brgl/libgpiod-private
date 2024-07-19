@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: LGPL-2.1-or-later
 // SPDX-FileCopyrightText: 2022-2024 Bartosz Golaszewski <bartosz.golaszewski@linaro.org>
 
-#include "internal.h"
+#include "gpiodglibinternal.h"
 
 #define get_prop(_obj, _prop, _type) \
 	({ \
