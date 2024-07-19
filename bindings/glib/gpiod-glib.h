@@ -20,7 +20,7 @@
 #include "gpiod-glib/chip-info.h"
 #include "gpiod-glib/edge-event.h"
 #include "gpiod-glib/error.h"
-#include "gpiod-glib/generated-enums.h"
+#include "gpiod-glib/gpiodglibgeneratedenums.h"
 #include "gpiod-glib/info-event.h"
 #include "gpiod-glib/line-config.h"
 #include "gpiod-glib/line-info.h"
