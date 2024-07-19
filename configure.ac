@@ -348,7 +348,7 @@ AC_CONFIG_FILES([Makefile
 		 bindings/cxx/gpiodcxx/Makefile
 		 bindings/cxx/examples/Makefile
 		 bindings/cxx/tests/Makefile
-		 bindings/glib/gpiod-glib.pc
+		 bindings/glib/gpiodglib.pc
 		 bindings/glib/Makefile
 		 bindings/glib/examples/Makefile
 		 bindings/glib/tests/Makefile
