@@ -3,7 +3,7 @@
 
 #include <errno.h>
 #include <glib.h>
-#include <gpiod-glib.h>
+#include <gpiodglib.h>
 #include <stdarg.h>
 
 G_DEFINE_QUARK(g-gpiod-error, gpiodglib_error)

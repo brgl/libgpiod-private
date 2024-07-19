@@ -4,7 +4,7 @@
 
 #include <gpiodglib.h>
 
-/* enumerations from "edge-event.h" */
+/* enumerations from "gpiodglibedgeevent.h" */
 
 GType gpiodglib_edge_event_type_get_type(void)
 {
@@ -26,7 +26,7 @@ GType gpiodglib_edge_event_type_get_type(void)
 	return static_g_enum_type_id;
 }
 
-/* enumerations from "info-event.h" */
+/* enumerations from "gpiodglibinfoevent.h" */
 
 GType gpiodglib_info_event_type_get_type(void)
 {
@@ -49,7 +49,7 @@ GType gpiodglib_info_event_type_get_type(void)
 	return static_g_enum_type_id;
 }
 
-/* enumerations from "line.h" */
+/* enumerations from "gpiodglibline.h" */
 
 GType gpiodglib_line_value_get_type(void)
 {

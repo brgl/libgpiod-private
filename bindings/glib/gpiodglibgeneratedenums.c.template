@@ -3,7 +3,7 @@
 
 /*** BEGIN file-header ***/
 
-#include <gpiod-glib.h>
+#include <gpiodglib.h>
 
 /*** END file-header ***/
 

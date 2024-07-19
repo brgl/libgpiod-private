@@ -2,7 +2,7 @@
 // SPDX-FileCopyrightText: 2022-2024 Bartosz Golaszewski <bartosz.golaszewski@linaro.org>
 
 #include <gpiod.h>
-#include <gpiod-glib.h>
+#include <gpiodglib.h>
 
 gboolean gpiodglib_is_gpiochip_device(const gchar *path)
 {
