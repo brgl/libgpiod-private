@@ -18,44 +18,44 @@ endif
 lib_LTLIBRARIES = libgpiod-glib.la
 
 libgpiod_glib_la_SOURCES = \
-	chip.c \
-	chip-info.c \
-	edge-event.c \
-	error.c \
-	info-event.c \
-	internal.c \
-	internal.h \
-	line-config.c \
-	line-info.c \
-	line-request.c \
-	line-settings.c \
-	misc.c \
-	request-config.c
+	gpiodglibchip.c \
+	gpiodglibchipinfo.c \
+	gpiodglibedgeevent.c \
+	gpiodgliberror.c \
+	gpiodglibinfoevent.c \
+	gpiodglibinternal.c \
+	gpiodglibinternal.h \
+	gpiodgliblineconfig.c \
+	gpiodgliblineinfo.c \
+	gpiodgliblinerequest.c \
+	gpiodgliblinesettings.c \
+	gpiodglibmisc.c \
+	gpiodglibrequestconfig.c
 
 EXTRA_DIST = \
-	generated-enums.c.template \
-	generated-enums.h.template
+	gpiodglibgeneratedenums.c.template \
+	gpiodglibgeneratedenums.h.template
 
 project_headers = \
 	$(srcdir)/gpiod-glib/line.h \
 	$(srcdir)/gpiod-glib/edge-event.h \
 	$(srcdir)/gpiod-glib/info-event.h
 
-generated-enums.c: $(project_headers) generated-enums.c.template
+gpiodglibgeneratedenums.c: $(project_headers) gpiodglibgeneratedenums.c.template
 	$(AM_V_GEN)$(GLIB_MKENUMS) \
-		--template=$(srcdir)/generated-enums.c.template \
+		--template=$(srcdir)/gpiodglibgeneratedenums.c.template \
 		--output=$(builddir)/$@ \
 		$(project_headers)
 
-gpiod-glib/generated-enums.h: $(project_headers) generated-enums.h.template
+gpiod-glib/gpiodglibgeneratedenums.h: $(project_headers) gpiodglibgeneratedenums.h.template
 	$(AM_V_GEN)$(GLIB_MKENUMS) \
-		--template=$(srcdir)/generated-enums.h.template \
+		--template=$(srcdir)/gpiodglibgeneratedenums.h.template \
 		--output=$(srcdir)/$@ \
 		$(project_headers)
 
 nodist_libgpiod_glib_la_SOURCES = \
-	generated-enums.c \
-	gpiod-glib/generated-enums.h
+	gpiodglibgeneratedenums.c \
+	gpiod-glib/gpiodglibgeneratedenums.h
 
 BUILT_SOURCES = $(nodist_libgpiod_glib_la_SOURCES)
 CLEANFILES = $(nodist_libgpiod_glib_la_SOURCES)
