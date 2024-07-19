@@ -351,7 +351,6 @@ AC_CONFIG_FILES([Makefile
 		 bindings/glib/gpiod-glib.pc
 		 bindings/glib/Makefile
 		 bindings/glib/examples/Makefile
-		 bindings/glib/gpiod-glib/Makefile
 		 bindings/glib/tests/Makefile
 		 bindings/python/Makefile
 		 bindings/python/gpiod/Makefile
